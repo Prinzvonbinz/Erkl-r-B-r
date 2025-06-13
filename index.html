@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lern-App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Erklär 🐻 Bär</h1>
+
+    <label for="classLevel">Deine Klassenstufe:</label>
+    <input type="number" id="classLevel" placeholder="z. B. 6" min="1" max="13" />
+
+    <label for="subject">Fach wählen:</label>
+    <select id="subject">
+      <option value="">– Fach auswählen –</option>
+      <option>Deutsch</option>
+      <option>Mathematik</option>
+      <option>Englisch</option>
+      <option>Französisch</option>
+      <option>Spanisch</option>
+      <option>Latein</option>
+      <option>Biologie</option>
+      <option>Physik</option>
+      <option>Chemie</option>
+      <option>Informatik</option>
+      <option>Geschichte</option>
+      <option>Politik</option>
+      <option>Wirtschaft</option>
+      <option>Erdkunde</option>
+      <option>Sozialkunde</option>
+      <option>Ethik</option>
+      <option>Religion</option>
+      <option>Philosophie</option>
+      <option>Kunst</option>
+      <option>Musik</option>
+      <option>Sport</option>
+      <option>Technik</option>
+      <option>Hauswirtschaft</option>
+      <option>Werken</option>
+      <option>Deutsch als Zweitsprache</option>
+    </select>
+
+    <label for="topic">Thema eingeben:</label>
+    <input type="text" id="topic" placeholder="z. B. Bruchrechnung" />
+
+    <button id="startBtn">Lektion starten</button>
+
+    <div id="lesson" class="hidden">
+      <h2>Lektion</h2>
+      <div id="explanation">...</div>
+      <button id="readBtn">🔊 Vorlesen</button>
+      <button id="loadTestBtn">Test starten</button>
+    </div>
+
+    <div id="test" class="hidden">
+      <h2>Wissenstest</h2>
+      <div id="questions"></div>
+      <button id="submitAnswers">Antworten prüfen</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
