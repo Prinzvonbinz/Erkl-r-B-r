@@ -1,4 +1,4 @@
-const apiKey = "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"; // <-- Ersetzen
+const apiKey = "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"; // <-- Ersetzen
 
 const subjectInput = document.getElementById("subject");
 const topicInput = document.getElementById("topic");
